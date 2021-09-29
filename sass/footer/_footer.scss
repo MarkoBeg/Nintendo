@@ -1,0 +1,85 @@
+footer {
+    background-color: $gray;
+    padding: 70px 0;
+    text-align: center;
+    color: $white;
+    height: auto;
+
+    .footer-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            padding-left: 15px;
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .footer-icons {
+        font-size: 50px;
+
+
+        .footer-icon {
+            cursor: pointer;
+            transition: 2s ease-in-out;
+
+
+            @keyframes rotation {
+                0% {
+                    transform: rotate(360deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+
+
+
+        }
+
+
+        .fa-youtube-square {
+            color: $red;
+
+            &:hover {
+                animation: rotation 2s linear;
+            }
+        }
+
+        .fa-facebook-square {
+            color: $blue;
+
+            &:hover {
+                animation: rotation 2s linear;
+            }
+        }
+
+        .fa-instagram-square {
+            color: palevioletred;
+
+            &:hover {
+                animation: rotation 2s linear;
+            }
+        }
+
+        .fa-twitter-square {
+            color: lightblue;
+
+            &:hover {
+                animation: rotation 2s linear;
+            }
+
+        }
+    }
+
+    .footer-text p {
+        font-size: 14px;
+        font-weight: 200;
+        color: $whitevol2;
+        font-family: $Museo;
+    }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//Colors
+$red: #e60012;
+$white: #ffffff;
+$ice-white: #d6f0fa;
+$whitevol2: #efefef;
+$gray: #434242;
+$blue: #0b2b6b;
+
+//Fonts 
+$Museo: "MuseoModerno, sans-serif";
+
+//media 
+$lg: 1200px;
+$md: 992px;
+$sm : 767px;
+$xs: 576px;

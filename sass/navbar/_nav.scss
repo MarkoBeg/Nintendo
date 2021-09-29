@@ -1,0 +1,272 @@
+.navbar {
+    background-color: $white;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-bottom: 1px solid $gray;
+    width: 100%;
+
+    @media (max-width: $md) {
+        display: none;
+    }
+
+    .logo {
+
+        background-color: $red;
+        padding: 20px 40px;
+        text-align: center;
+        cursor: pointer;
+
+
+        a {
+            color: $whitevol2;
+            text-decoration: none;
+            border: 3px solid white;
+            text-align: center;
+            font-family: $Museo;
+            font-weight: 600;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+
+    .search-btn {
+        display: flex;
+        width: 450px;
+        align-items: center;
+        position: relative;
+        top: 10px;
+        margin-left: 10px;
+        border-bottom: 1px solid $gray;
+
+        &:hover {
+            border-color: $red;
+
+
+        }
+
+        .fa-search {
+            color: $gray;
+            font-size: 1.2em;
+            position: relative;
+            bottom: 0.5em;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        input {
+            padding-left: 15px;
+            width: 450px;
+            position: absolute;
+            bottom: 15px;
+            border: none;
+            outline: none;
+            color: $gray;
+
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 550;
+            }
+
+            &:hover::placeholder {
+                color: $red;
+
+            }
+        }
+    }
+
+    .navbar-nav {
+        position: absolute;
+        right: 45px;
+
+
+
+        ul {
+            list-style: none;
+
+            li {
+
+                display: inline-block;
+                padding-left: 25px;
+
+                a {
+                    color: $gray;
+                    text-decoration: none;
+                    font-family: $Museo;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                    i {
+                        padding-right: 0.5em;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+
+}
+
+.btn-open {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+
+    @media (max-width: $md) {
+        display: block;
+    }
+
+
+
+    .fa-bars {
+        font-size: 35px;
+        color: $gray;
+        display: none;
+
+        @media (max-width: $md) {
+            display: block;
+        }
+
+
+    }
+}
+
+// side nav-------------
+.side-nav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $whitevol2;
+    border: 1px solid $blue;
+    border-style: dashed;
+    display: none;
+    transition: 0.5s ease-in-out;
+    transform: translate(100%);
+
+
+
+    @media (max-width:$md) {
+        display: block; ///side nav prikazi
+    }
+
+    a {
+        display: flex;
+        display: block;
+        flex-direction: column;
+        padding: 10px 10px 10px 30px;
+        font-size: 22px;
+        font-family: $Museo;
+        text-decoration: none;
+        color: $gray;
+
+        &:hover {
+            color: $red;
+            background-color: $ice-white;
+
+        }
+
+        &:first-child:hover {
+            background-color: $white;
+        }
+
+
+
+
+
+        i {
+            padding-right: 5px;
+
+        }
+
+    }
+}
+
+.nav-side {
+    transform: translate(0);
+}
+
+
+
+
+
+//nav bottom --------------------------
+.nav-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    padding-top: 0.4em;
+    border-bottom: 1px solid $gray;
+
+    @media(max-width:$md) {
+        display: none;
+
+    }
+
+    .drop-down {
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .dropdown-content {
+        display: none;
+        margin-top: 100px;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        a {
+
+            display: inline-block;
+            border: 1px solid $gray;
+
+            img {
+                width: 100%;
+                height: 68px;
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                background-color: $whitevol2;
+            }
+        }
+    }
+
+    .show-dropdown {
+        display: block;
+    }
+
+    a {
+        color: $gray;
+        padding-left: 1em;
+        font-size: 1.1em;
+        font-family: $Museo;
+        text-decoration: none;
+
+    }
+
+
+
+    i {
+        padding-right: 0.5em;
+        font-size: 1.2em;
+    }
+}

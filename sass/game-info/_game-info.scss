@@ -1,0 +1,280 @@
+.game-info-section {
+    display: grid;
+    grid-auto-columns: 50fr 50fr;
+    grid-auto-flow: column;
+    padding: 15px 0;
+    gap: 12px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: left;
+
+    @media (max-width: $md) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
+    .game-info {
+        display: inline-block;
+        text-align: left;
+
+
+
+    }
+
+    .games {
+        padding-top: 10px;
+
+
+
+    }
+
+
+    .icon {
+        font-size: 30px;
+        padding-right: 10px;
+        color: $gray;
+
+        @media (max-width: $md) {
+            font-size: 20px;
+
+        }
+    }
+
+    .game-big-text {
+        font-size: 22px;
+        font-family: $Museo;
+        font-weight: 600;
+        color: $gray;
+        margin-right: 5px;
+
+        @media (max-width: $md) {
+            font-size: 18px;
+
+        }
+    }
+
+    .game-small-text {
+        font-family: $Museo;
+        font-size: 18px;
+        font-weight: 300;
+        color: $gray;
+
+        @media (max-width: $md) {
+            font-size: 16px;
+
+        }
+    }
+
+}
+
+.support-section {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+
+    @media (max-width: $md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .left-mode {
+        width: 50%;
+        text-align: center;
+        max-width: 50%;
+        display: inline-block;
+        padding: 20px 0;
+
+        h2 {
+            color: $gray;
+            font-weight: bold;
+            font-size: 26px;
+            padding-bottom: 15px;
+
+            @media (max-width: $md) {
+                font-size: 20px;
+                text-align: left;
+
+            }
+
+        }
+
+        .tv,
+        .tablet,
+        .plays {
+            color: $gray;
+            font-size: 42px;
+            padding-left: 45px;
+
+            @media (max-width: $md) {
+                font-size: 40px;
+                display: grid;
+                margin: 10PX 0;
+
+
+            }
+        }
+
+        p {
+            padding-top: 1em;
+            font-size: 0.75em;
+            text-align: left;
+
+            .support {
+                color: $red;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right-mode {
+        width: 50%;
+        max-width: 50%;
+        text-align: center;
+        display: inline-block;
+        padding: 20px 0;
+
+        h2 {
+            color: $gray;
+            font-weight: bold;
+            font-size: 26px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.support-info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $white;
+    padding-top: 100px;
+
+
+
+    .support-logo {
+        width: 350px;
+        cursor: pointer;
+
+        @media (max-width: $md) {
+            max-width: 100%;
+            width: 250PX;
+            margin: 0 auto;
+
+
+        }
+
+    }
+
+    .support-text {
+        text-align: left;
+        color: $gray;
+        font-size: 22px;
+
+        @media (max-width: $md) {
+            text-align: center;
+            font-size: 18px;
+
+
+        }
+
+    }
+
+    .support-btn a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 32px;
+        font-weight: bold;
+        position: relative;
+
+        @media (max-width: $md) {
+            display: none;
+
+
+        }
+
+        &:hover {
+            border-bottom: 4px solid gray;
+        }
+
+        &:after {
+            content: ">";
+            position: absolute;
+            right: -35px;
+            color: $gray;
+
+
+
+        }
+    }
+
+    .btn-support {
+        padding-top: 15px;
+        display: block;
+        padding-bottom: 15px;
+        transition: 1s ease-in-out;
+
+        @media (max-width: $md) {
+
+            display: none;
+
+
+
+        }
+
+        &:hover {
+            transform: scale(0.8);
+        }
+
+
+
+        h2 {
+            color: $gray;
+            font-weight: bold;
+            font-size: 26px;
+            font-family: $Museo;
+            padding-bottom: 25px;
+            padding-top: 15px;
+        }
+
+        a {
+
+            background-color: $red;
+            padding: 20px 40px;
+            border-radius: 10px;
+            margin-left: 10px;
+            color: $white;
+            text-decoration: none;
+            font-size: 18px;
+
+
+
+
+
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+    .support-info-section {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 45px;
+        text-align: left;
+        background-color: $white;
+
+
+
+    }
+}
